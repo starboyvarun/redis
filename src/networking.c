@@ -3509,7 +3509,8 @@ void redactClientCommandArgument(client *c, int argc) {
 
 /* Rewrite the command vector of the client. All the new objects ref count
  * is incremented. The old command vector is freed, and the old objects
- * ref count is decremented. */
+ * ref count is decremented. */ 
+ # I cannot see (ref count decremented implemented in this particular function)
 void rewriteClientCommandVector(client *c, int argc, ...) {
     va_list ap;
     int j;
